@@ -1,0 +1,95 @@
+! URxvt
+
+URxvt.hold: boolean
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+URxvt.urgentOnBell: true
+URxvt.keysym.C-b:
+URxvt.iso14755: true
+URxvt.iso14755_52: true
+
+! Apparerance
+
+URxvt.scrollBar: false
+URxvt.borderLess: false
+URxvt.fading: 0
+URxvt.intensityStyles: false
+
+! Fonts
+
+URxvt.letterSpace: 0
+URxvt*font:                 xft:Inconsolata Nerd Font Mono:pixelsize=27:minspace=False, xft:DejaVu Sans:pixelsize=18
+URxvt*boldFont:             xft:Inconsolata Nerd Font Mono:pixelsize=27:minspace=False, xft:DejaVu Sans:pixelsize=18
+URxvt*letterSpace: 0
+
+! Cursor
+
+URxvt.cursorUnderline: false
+URxvt.cursorBlink: false
+Xcursor.theme: Vanilla-DMZ
+
+! Colours
+
+URxvt.cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+URxvt.background: #002b36
+URxvt.foreground: #839496
+
+URxvt.color0: #0d4350
+URxvt.color1: #dc322f
+URxvt.color2: #859900
+URxvt.color3: #b58900
+URxvt.color4: #268bd2
+URxvt.color5: #6c71c4
+URxvt.color6: #2aa198
+URxvt.color7: #839496
+URxvt.color9: #cb4b16
+URxvt.color8: #002b36
+URxvt.color10: #586e75
+URxvt.color11: #657b83
+URxvt.color12: #839496
+URxvt.color13: #6c71c4
+URxvt.color14: #93a1a1
+URxvt.color15: #fdf6e3
+
+! Rofi
+
+rofi.monitor: DP-2 
+rofi.font: xos4Terminus 12
+rofi.bw: 3
+
+rofi.color-enabled: true
+rofi.color-window: #002b36, #255662, #0d4350
+rofi.color-normal: #002b36, #839496, #002b36, #0d4350, #839496
+rofi.color-active: #0d4350, #2aa198, #002b36, #839496, #002B36
+rofi.color-urgent: #a83838, #ffffff, #eee8d5, #a83838, #ffffff
+
+! Links
+
+URxvt.url-launcher: urxvtOpenUrl.sh $0
+URxvt.matcher.rend.0: Uline Normal fg6
+URxvt.matcher.button: 1
+URxvt.keysym.Control-l: perl:matcher:last
+URxvt.keysym.Control-u: perl:matcher:select
+URxvt.keysym.Control-o: perl:matcher:list
+
+! Keybindings
+
+! Search text with keyboard
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+! Select text with the keyboard
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
+! Resize fonts
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger: C-plus
+URxvt.resize-font.reset: C-equal
+
+! Enable `Home` and `End`
+
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+URxvt.keysym.KP_Home: \033[1~
+URxvt.keysym.KP_End:  \033[4~

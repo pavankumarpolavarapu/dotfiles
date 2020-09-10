@@ -1,0 +1,23 @@
+{
+   "repositories":[
+	"curl",
+	"flameshot",	
+	"fzf",
+	"git",
+    	"htop",
+	"neovim",
+	"nmap",
+    	"tldr",
+    	"tmux",
+	"vim",
+	"vim-gtk",
+	"vlc",
+	"vscode",
+	"xclip",
+	"--no-install-recommends yarn",
+	"zsh"
+   ],
+   "terminal":{
+      "theme":"https://git.io/vQgMr"
+   }
+}
