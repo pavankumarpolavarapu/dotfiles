@@ -1,7 +1,7 @@
 ! URxvt
 
 URxvt.hold: boolean
-URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,resize-font
 URxvt.urgentOnBell: true
 URxvt.keysym.C-b:
 URxvt.iso14755: true
@@ -55,7 +55,7 @@ URxvt.color15: #fdf6e3
 
 ! Rofi
 
-rofi.monitor: DP-2 
+rofi.monitor: DP-2
 rofi.font: xos4Terminus 12
 rofi.bw: 3
 
